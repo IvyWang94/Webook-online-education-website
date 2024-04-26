@@ -73,20 +73,17 @@ fetch("https://sw0iabxju8.execute-api.us-east-1.amazonaws.com/dev", requestOptio
   .then(response => {
     // 检查响应状态码
     if (!response.ok) {
-      throw new Error('Network response was not ok');
+      throw new Error('Network response was not ok' + response.statusText);
     }
     return response.json(); // 这里改为解析JSON
   })
-  .then(result => {
-    // 确保响应中包含message属性
-    if (result.hasOwnProperty('message')) {
-      alert(result.message);
-    } else {
-      throw new Error('The result does not have a message property');
-    }
-  })
-  .catch(error => {
-    // 捕获fetch请求、JSON解析或其他错误
-    console.error('Fetch error:', error);
-  });
+  .then(data => {
+    alert("Submission successful, we will contact you within 24 hours"); // 显示成功弹框
+    console.log(data); // 可选：控制台记录服务器响应
+    document.getElementById('contactForm').reset(); // 重置表单
+    })
+    .catch(error => {
+        alert("Error submitting form."); // 显示错误弹框
+        console.error('Error:', error);
+    });
 }
