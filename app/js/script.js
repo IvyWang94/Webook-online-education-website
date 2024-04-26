@@ -70,7 +70,7 @@ function submitForm(username,useremail,usertext) {
                  body: raw,
                  redirect: 'follow'
     };
-    fetch("api-key", requestOptions)
+    fetch("https://sw0iabxju8.execute-api.us-east-1.amazonaws.com/dev", requestOptions)
     .then(response => response.text())
     .then(result => alert(JSON.parse(result).message))
     .catch(error => console.log('error', error));
