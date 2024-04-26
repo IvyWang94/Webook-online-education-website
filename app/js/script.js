@@ -40,3 +40,50 @@ for(i=0;i<acc.length;i++){
         this.classList.toggle('active');
     });
 };
+
+function submitForm() {
+    var username = document.getElementById('username_c').value.trim();
+    var email = document.getElementById('useremail_c').value.trim();
+    var message = document.getElementById('usertext_c').value.trim();
+
+    // 验证用户名是否填写
+    if (username === '') {
+        alert('Please enter your name.');
+        return;
+    }
+
+    // 验证电子邮件格式
+    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+        alert('Please enter a valid email address.');
+        return;
+    }
+
+    // 验证消息内容是否足够长
+    if (message.length < 10) {
+        alert('Please enter a message with at least 10 characters.');
+        return;
+    }
+
+    var formData = new FormData(document.getElementById('contactForm'));
+
+    fetch('http://127.0.0.1:5000/submit_contact', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok: ' + response.statusText);
+        }
+        return response.json(); // 解析响应为JSON
+    })
+    .then(data => {
+        alert("Submission successful, we will contact you within 24 hours");  // 显示成功弹框
+        console.log(data); // 可选：控制台记录服务器响应
+        document.getElementById('contactForm').reset(); // 重置表单
+    })
+    .catch(error => {
+        alert("Error submitting form."); // 显示错误弹框
+        console.error('Error:', error);
+    });
+}

@@ -654,25 +654,28 @@
             <div class="contact_text">
                 <h1>Contact</h1>
             </div>
+        
             <div class="contact_main">
                 <div class="input">
-                    <form action="contact">
+                    <form id="contactForm">
                         <div class="name">
                             <label for="username">Name</label>
-                            <input type="text" placeholder="John Marine" id="username">
+                            <input type="text" name="username_c" placeholder="John Marine" id="username_c">
                         </div>
                         <div class="email">
                             <label for="useremail">Email</label>
-                            <input type="email" placeholder="John@gmail.com" id="useremail">
+                            <input type="email" name="useremail_c" placeholder="John@gmail.com" id="useremail_c">
                         </div>
                         <div class="textarea">
                             <label for="usertext">Message</label>
-                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                            <textarea name="usertext_c" id="usertext_c" cols="30" rows="10"></textarea>
                         </div>
                         <div class="submit">
-                            <button class="button-86">Send</button>
+                            <button type="button" onclick="submitForm()" class="button-86">Send</button>
                         </div>
                     </form>
+                    
+                    <div id="resultMessage"></div>
                 </div>
                 <div class="details">
                     <div class="details_text">
@@ -717,20 +720,10 @@
                     </div>
                 </div>
             </div>
+        
         </section>
 
-        <!-- -------------------------------- -->
-        <!-- subscribe -->
-        <div class="subscribe">
-            <div class="text">
-                <h1>Subscribe</h1>
-                <p>To Our Email Newsletter And Expert Blog</p>
-            </div>
-            <div class="input">
-                <input type="email" placeholder="Emili@gmail.com" name="subscribe_email" class="input_email">
-                <button type="submit" class="btn">Submit</button>
-            </div>
-        </div>
+
 
     </main>
     <footer class="footer" id="footer">
@@ -799,6 +792,7 @@
             </h1>
         </div>
     </footer>
+    
     <script src="app/js/script.js" defer></script>
 </body>
 
