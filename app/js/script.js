@@ -41,11 +41,7 @@ for(i=0;i<acc.length;i++){
     });
 };
 
-function submitForm() {
-    var username = document.getElementById('username_c').value.trim();
-    var email = document.getElementById('useremail_c').value.trim();
-    var message = document.getElementById('usertext_c').value.trim();
-
+function submitForm(username,usermail,usertext) {
     // 验证用户名是否填写
     if (username === '') {
         alert('Please enter your name.');
@@ -64,26 +60,18 @@ function submitForm() {
         alert('Please enter a message with at least 10 characters.');
         return;
     }
-
+    var myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+    var raw = JSON.stringify({"username":username,"useremail":useremail,"usertext":usertext});
     var formData = new FormData(document.getElementById('contactForm'));
-
-    fetch('http://127.0.0.1:5000/submit_contact', {
-        method: 'POST',
-        body: formData
-    })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok: ' + response.statusText);
-        }
-        return response.json(); // 解析响应为JSON
-    })
-    .then(data => {
-        alert("Submission successful, we will contact you within 24 hours");  // 显示成功弹框
-        console.log(data); // 可选：控制台记录服务器响应
-        document.getElementById('contactForm').reset(); // 重置表单
-    })
-    .catch(error => {
-        alert("Error submitting form."); // 显示错误弹框
-        console.error('Error:', error);
-    });
+    var requestOptions = {
+                 method: 'POST',
+                 headers: myHeaders,
+                 body: raw,
+                 redirect: 'follow'
+    };
+    fetch("api-key", requestOptions)
+    .then(response => response.text())
+    .then(result => alert(JSON.parse(result).message))
+    .catch(error => console.log('error', error));
 }
