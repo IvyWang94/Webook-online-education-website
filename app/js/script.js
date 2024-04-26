@@ -62,15 +62,31 @@ function submitForm(username,useremail,usertext) {
     }
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
-    var raw = JSON.stringify({"username":username,"useremail":useremail,"usertext":usertext});
+    var raw = JSON.stringify({ "username": username, "useremail": useremail, "usertext": usertext });
     var requestOptions = {
-                 method: 'POST',
-                 headers: myHeaders,
-                 body: raw,
-                 redirect: 'follow'
+      method: 'POST',
+      headers: myHeaders,
+      body: raw,
+      redirect: 'follow'
     };
-    fetch("https://sw0iabxju8.execute-api.us-east-1.amazonaws.com/dev", requestOptions)
-    .then(response => response.text())
-    .then(result => alert(JSON.parse(result).message))
-    .catch(error => console.log('error', error));
+fetch("https://sw0iabxju8.execute-api.us-east-1.amazonaws.com/dev", requestOptions)
+  .then(response => {
+    // 检查响应状态码
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json(); // 这里改为解析JSON
+  })
+  .then(result => {
+    // 确保响应中包含message属性
+    if (result.hasOwnProperty('message')) {
+      alert(result.message);
+    } else {
+      throw new Error('The result does not have a message property');
+    }
+  })
+  .catch(error => {
+    // 捕获fetch请求、JSON解析或其他错误
+    console.error('Fetch error:', error);
+  });
 }
