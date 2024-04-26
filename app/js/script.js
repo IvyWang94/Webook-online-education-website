@@ -50,13 +50,13 @@ function submitForm(username,usermail,usertext) {
 
     // 验证电子邮件格式
     var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailPattern.test(email)) {
+    if (!emailPattern.test(usermail)) {
         alert('Please enter a valid email address.');
         return;
     }
 
     // 验证消息内容是否足够长
-    if (message.length < 10) {
+    if (usertext.length < 10) {
         alert('Please enter a message with at least 10 characters.');
         return;
     }
