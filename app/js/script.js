@@ -41,7 +41,7 @@ for(i=0;i<acc.length;i++){
     });
 };
 
-function submitForm(username,usermail,usertext) {
+function submitForm(username,useremail,usertext) {
     // 验证用户名是否填写
     if (username === '') {
         alert('Please enter your name.');
@@ -50,7 +50,7 @@ function submitForm(username,usermail,usertext) {
 
     // 验证电子邮件格式
     var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailPattern.test(usermail)) {
+    if (!emailPattern.test(useremail)) {
         alert('Please enter a valid email address.');
         return;
     }
