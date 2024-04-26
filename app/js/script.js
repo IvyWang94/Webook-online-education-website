@@ -63,7 +63,6 @@ function submitForm(username,useremail,usertext) {
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
     var raw = JSON.stringify({"username":username,"useremail":useremail,"usertext":usertext});
-    var formData = new FormData(document.getElementById('contactForm'));
     var requestOptions = {
                  method: 'POST',
                  headers: myHeaders,
