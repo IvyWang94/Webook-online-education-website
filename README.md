@@ -49,22 +49,6 @@ These AWS services are applied for security concerns:
 2.	**API Gateway** is used to securely expose and manage APIs. Through API Gateway, access control policies can be implemented to ensure secure interactions between front-end and back-end.
 3.	**IAM** is AWS's authentication and access control service, used to manage access to AWS resources. Through IAM, we can grant write access for Lambda to store data in DynamoDB.
 
-<br/>
-
-## 🌍 Building Steps
-
-**Step 1 — Deploy applications using Amplify and GitHub**
-
-**Step 2 — AWS Lambda Serverless Function**
-
-**Step 3 — Connect the Lambda function to the web application**
-
-**Step 4 — Create DynamoDB table**
-
-**Step 5 — IAM Policies and Permissions**
-
-**Final step — Test the web application**
-
 
 <br/>
 
