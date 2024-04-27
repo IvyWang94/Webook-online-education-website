@@ -1,7 +1,7 @@
 
 # Webook - Single Page Education Website
 
-This is a final group project by **Group 6** for **COM6102 Distributed Systems and Cloud Computing** (2024).
+This is a final group project by **Group 6** for **COM6102 Distributed Systems and Cloud Computing (2024 Spring)**.
 
 (Adapted from the [source](https://github.com/SM8UTI/Webook-online-education-website)) 
 
