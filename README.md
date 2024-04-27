@@ -1,16 +1,6 @@
 
 # Webook - Single Page Education Website
 
-This is a final group project for **COM6102 Distributed Systems and Cloud Computing (2024 Spring)**.
-(Adapted from [source](https://github.com/SM8UTI/Webook-online-education-website)) 
-
-Contributors: Y. Wang, Y. Ge, L. Lin, X. He.(Group 6)
-
-
-Application Website : [https://master.d3akmlv2vkrixn.amplifyapp.com/](https://master.d3akmlv2vkrixn.amplifyapp.com/)
-
-
-YouTube : (To be updated...)
 
 <br/>
 
