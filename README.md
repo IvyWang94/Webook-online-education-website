@@ -2,6 +2,12 @@
 
 ## 🖥️The application includes: course introduction, lecturer introduction, FAQs, contact messages and other functions.
 
+## This application completed by team6 in COM6102.
+## Team member:
+He Xiaoxiao p233567
+Wang Yanyi p233361
+Ge Yuxin   p233336
+Lei Linlin   p233341
 
 **Client:** 
 ```Html, Css , Scss and Javascript```
