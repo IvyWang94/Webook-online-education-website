@@ -60,25 +60,13 @@ These AWS services are applied for security concerns:
 
 **Step 1 — Deploy applications using Amplify and GitHub**
 
-<br/>
-
 **Step 2 — AWS Lambda Serverless Function**
-
-<br/>
 
 **Step 3 — Connect the Lambda function to the web application**
 
-<br/>
-
 **Step 4 — Create DynamoDB table**
 
-<br/>
-
-
 **Step 5 — IAM Policies and Permissions**
-
-
-<br/>
 
 **Final step — Test the web application**
 
