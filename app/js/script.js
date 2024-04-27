@@ -69,7 +69,7 @@ function submitForm(username,useremail,usertext) {
       body: raw,
       redirect: 'follow'
     };
-fetch("https://sw0iabxju8.execute-api.us-east-1.amazonaws.com/dev", requestOptions)
+fetch("https://xgrrv2b3hj.execute-api.us-east-1.amazonaws.com/dev", requestOptions)
   .then(response => {
     // 检查响应状态码
     if (!response.ok) {
