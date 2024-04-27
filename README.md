@@ -5,11 +5,29 @@
 
 # Webook - Single Page Education Website
 
-This is a solution of a [Thapa Technical Codefest](http://thapacodefest.thapaonlineclass.com/).
-The Problem Statement is to make a single page Online education website ( only frontend work ). I am Smruti ranjan nayak Btech 1st Year Studet in CSE Branch. I complete this problem below solution you saw every single function, code, and feature. in a few months, I had designed many components or websites, this is my first codefest or hackathon challenge to develop my skills.
-<br/>
-in this project, I learned many things as I had never designed or coded a FAQ section and I had designed this website in Figma first then I had code.
+(This project is an adapted version of the original [one](https://github.com/SM8UTI/Webook-online-education-website).) 
 
+
+<br/>
+
+## Overview
+In this project, we aim to build and deploy a single-page web application (named “Webook”) that enables users to explore the marketing information of online courses provided by Webook. This application presents users with an HTML-based interface with a RESTful web service on the backend to submit their enquiries.
+
+<br/>
+The main components of the website are: 
+
+- Course introduction, Lecturer introduction, FAQs, Contact messages and other functions, where:
+    - Contact messages contains the most important feature of this application
+
+<br/>
+Specially, this application integrates several AWS cloud services including:
+
+- **AWS Amplify**: providing continuous deployment and hosting of static web resources (HTML, CSS, JavaScript, images, etc.)
+- **API Gateway** and **Lambda**: building a public backend API that receives data and triggers a Lambda function to store the data into the database
+- **DynamoDB**: providing a persistent layer where data can be stored by the Lambda function
+- **IAM**: providing secure access for the Lambda function to store data into DynamoDB
+- **CloudWatch**: monitoring application performance and resource use
+  
 <br/>
 
 ## 🖥️ Challenge Description : 
@@ -27,20 +45,11 @@ Ex. Navbar, Header section, Services/Features, Courses, FAQ, Contact, Footer, et
 
 <br/>
 
-# 🌍 Solution : 
+## 🌍  
+
 
 <br/>
 
-### Demo : [link](https://webook.netlify.app/)
-
-<br/>
-
-## 👩‍💻 Tech Stack
-
-**Client:** 
-```Html, Css , Scss and Javascript```
-
-**Server:** ``` netlify```
 
 ## 📁 File Strutcture : 
 
@@ -101,84 +110,14 @@ Ex. Navbar, Header section, Services/Features, Courses, FAQ, Contact, Footer, et
 <br/>
 
 
-## 🌐 Color Section
-
-| Color             | Hex                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| Primary Color | ![#08d9d5](https://via.placeholder.com/10/08d9d5?text=+) hsl(179, 93%, 44%) |
-| Blue Color | ![#00aab3](https://via.placeholder.com/10/00aab3?text=+) hsl(183, 100%, 35%) |
-| Light Blue Color | ![#72cacf](https://via.placeholder.com/10/72cacf?text=+) hsl(183, 49%, 63%) |
-| Secondary Color | ![#393e46](https://via.placeholder.com/10/393e46?text=+) hsl(217, 10%, 25%) |
-| Background Color | ![#212730](https://via.placeholder.com/10/212730?text=+) hsl(216, 18%, 16%) |
-| White Color | ![#ffffff](https://via.placeholder.com/10/ffffff?text=+) hsl(0, 0%, 100%) |
-| Darkish White Color | ![#c7c7c7](https://via.placeholder.com/10/c7c7c7?text=+) hsl(0, 0%, 78%) |
-
-```css
-
-:root{
-    --primarycolor:hsl(179, 93%, 44%);
-    --blue:hsl(183, 100%, 35%);
-    --lightblue:hsl(183, 49%, 63%);
-    --secondarycolor:hsl(217, 10%, 25%);
-    --Backgroundcolor:hsl(216, 18%, 16%);
-    --white:hsl(0, 0%, 100%);
-    --darkishwhite:hsl(0, 0%, 78%);
-}
-
-```
-
-- if you intrest change color code as you prefer then go the `    app > scss > global > colors.scss  `
-
-<br/>
-
-## 🔠 Font Section : 
-
-- in this project i had used [Outfit](https://fonts.google.com/specimen/Outfit)
-    - Font-weight : 400 600 800;
-
-```html
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
-```
-
-```css
-:root{
-    --outfit:'Outfit',sans-serif;
-}
-```
-
-- if you intrest change font family as you prefer then go the `app > scss > global > fonts.scss`
-
-<br/>
-
-## 🌄 Images :
-<br/> 
-
-```css
-:root{
-    --toggleimg:url(../images/menu-alt.png);
-    --toggleactiveimg:url(../images/menu-x.png);
-    --preloadder:url(../images/preloader.gif);
-    --featuresimage:url('https://images.unsplash.com/photo-1605711285791-0219e80e43a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80');
-}
-```
-
-<br/>
-
-# 💻 Screenshot : 
+## 💻 Screenshot : 
 
 ![Screenshot](screenshot-pc.png)
 
 
 <br/>
 
-# ©️ Copyright : 
-
-<div class="copyright">
-    <p>2022 <span>©</span> Copyright <span>Webook</span> And Design By <a href="https://github.com/SM8UTI">SM8UTI 😃</a>
-    </p>
-</div>
+### ©️ Copyright : 
 
 ```
 Boost Software License - Version 1.0 - August 17th, 2003
