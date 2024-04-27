@@ -51,14 +51,14 @@ Specially, this application integrates several AWS cloud services including:
 These AWS services are applied for security concerns:
 <br/>
 1.	**Amplify** is a powerful tool with many built-in security features that can help protect applications and data. It provides data encryption capabilities that can encrypt data during data transmission and storage to protect sensitive information from being Acquired by unauthorized visitors. We use these features to ensure that applications comply with regulations and standards for privacy and data security.
-2.	**API Gateway** can be used to securely expose and manage APIs. Through API Gateway, access control policies can be implemented to ensure secure interactions between front-end and back-end.
+2.	**API Gateway** is used to securely expose and manage APIs. Through API Gateway, access control policies can be implemented to ensure secure interactions between front-end and back-end.
 3.	**IAM** is AWS's authentication and access control service, used to manage access to AWS resources. Through IAM, we can grant write access for Lambda to store data in DynamoDB.
 
 <br/>
 
 ## 🌍 Building Steps
 
-**Step 1 — Deploy applications using Amplify**
+**Step 1 — Deploy applications using Amplify and GitHub**
 
 <br/>
 
@@ -75,12 +75,12 @@ These AWS services are applied for security concerns:
 <br/>
 
 
-**Step 5 - IAM Policies and Permissions**
+**Step 5 — IAM Policies and Permissions**
 
 
 <br/>
 
-**Final step - Test the web application**
+**Final step — Test the web application**
 
 
 <br/>
