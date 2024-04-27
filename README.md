@@ -30,23 +30,24 @@ Specially, this application integrates several AWS cloud services including:
   
 <br/>
 
-## 🖥️ Challenge Description : 
+## Architecture :
+
+<img src="architecture.png" style="width:100%">
 
 
+## Security Concerns: 
+
+These AWS services are applied for security concerns:
+<br/>
+1.	**Amplify** is a powerful tool with many built-in security features that can help protect applications and data. It provides data encryption capabilities that can encrypt data during data transmission and storage to protect sensitive information from being Acquired by unauthorized visitors. We use these features to ensure that applications comply with regulations and standards for privacy and data security.
+2.	**API Gateway** can be used to securely expose and manage APIs. Through API Gateway, access control policies can be implemented to ensure secure interactions between front-end and back-end.
+3.	**IAM** is AWS's authentication and access control service, used to manage access to AWS resources. Through IAM, we can control Lambda's access to DynamoDB services and resources.
 
 <br/>
-This challenge is absolutely made for those who love to code websites and make the website look modern, sleek, user-friendly, responsive n many more. You have to create a single page of the Online Education Website using any preferred language you want. You have to only code the front-end part, no back-end code is needed.
 
-Ex. Navbar, Header section, Services/Features, Courses, FAQ, Contact, Footer, etc.
+## 🌍 Building Steps :
 
-- Single Page Online Education Website
-- Only Front-End Code (Any Language)
-- Make it responsive on all devices
-
-<br/>
-
-## 🌍  
-
+**Step 1 -- Deploy applications using Amplify**
 
 <br/>
 
