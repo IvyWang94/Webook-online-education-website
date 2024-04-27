@@ -1,7 +1,8 @@
 
 # Webook - Single Page Education Website
 
-
+(Adapted from [source](https://github.com/SM8UTI/Webook-online-education-website))  
+Contributor: Y. Wang, Y. Ge, L. Lin, X. He
 <br/>
 
 ## Overview
