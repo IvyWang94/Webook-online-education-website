@@ -1,7 +1,3 @@
-
-
-<img src="app/images/banner.svg" style="width:100%">
-
 # Webook - Build a webook education marketing Application
 
 ## 🖥️The application includes: course introduction, lecturer introduction, FAQs, contact messages and other functions.
