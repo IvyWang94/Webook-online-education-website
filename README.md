@@ -2,46 +2,10 @@
 
 <img src="app/images/banner.svg" style="width:100%">
 
+# Webook - Build a webook education marketing Application
 
-# Webook - Single Page Education Website
+## 🖥️The application includes: course introduction, lecturer introduction, FAQs, contact messages and other functions.
 
-This is a solution of a [Thapa Technical Codefest](http://thapacodefest.thapaonlineclass.com/).
-The Problem Statement is to make a single page Online education website ( only frontend work ). I am Smruti ranjan nayak Btech 1st Year Studet in CSE Branch. I complete this problem below solution you saw every single function, code, and feature. in a few months, I had designed many components or websites, this is my first codefest or hackathon challenge to develop my skills.
-<br/>
-in this project, I learned many things as I had never designed or coded a FAQ section and I had designed this website in Figma first then I had code.
-
-
-
-
-
-here is the [Figma file](Webook.fig)
-
-<br/>
-
-## 🖥️ Challenge Description : 
-
-
-
-<br/>
-This challenge is absolutely made for those who love to code websites and make the website look modern, sleek, user-friendly, responsive n many more. You have to create a single page of the Online Education Website using any preferred language you want. You have to only code the front-end part, no back-end code is needed.
-
-Ex. Navbar, Header section, Services/Features, Courses, FAQ, Contact, Footer, etc.
-
-- Single Page Online Education Website
-- Only Front-End Code (Any Language)
-- Make it responsive on all devices
-
-<br/>
-
-# 🌍 Solution : 
-
-<br/>
-
-### Demo : [link](https://webook.netlify.app/)
-
-<br/>
-
-## 👩‍💻 Tech Stack
 
 **Client:** 
 ```Html, Css , Scss and Javascript```
