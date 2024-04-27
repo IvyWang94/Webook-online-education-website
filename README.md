@@ -12,7 +12,7 @@
 Contributors: YW, YG, LL, XH
 
 
-Website : [https://master.d3uqy6fsf0pgqc.amplifyapp.com/](https://master.d3uqy6fsf0pgqc.amplifyapp.com/)
+Website : [https://master.d3akmlv2vkrixn.amplifyapp.com/](https://master.d3akmlv2vkrixn.amplifyapp.com/)
 
 
 YouTube : (To be updated...)
