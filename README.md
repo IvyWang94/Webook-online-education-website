@@ -1,8 +1,4 @@
 
-
-<img src="app/images/banner.svg" style="width:100%">
-
-
 # Webook - Single Page Education Website
 
 (This project is an adapted version of the original [one](https://github.com/SM8UTI/Webook-online-education-website).) 
