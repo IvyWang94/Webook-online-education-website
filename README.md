@@ -69,7 +69,7 @@ These AWS services are applied for security concerns:
 <br/>
 
 
-## 📁 File Strutcture
+## 📁 File Structure
 
 ```
 |   index.html // Index Html File 
