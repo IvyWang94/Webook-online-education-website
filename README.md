@@ -26,7 +26,9 @@ In this project, we aim to build and deploy a single-page web application (named
 The main components of the website are: 
 
 - Course introduction, Lecturer introduction, FAQs, Contact messages and other functions, where:
-    - Contact messages contains the most important feature of this application
+    - **Contact messages** contains the most important feature of this application
+
+We adpated the original webpage, JavaScipt file and python programme to be compatible with the AWS services applied.
 
 <br/>
 Specially, this application integrates several AWS cloud services including:
@@ -39,22 +41,22 @@ Specially, this application integrates several AWS cloud services including:
   
 <br/>
 
-## Architecture :
+## Architecture
 
-<img src="architecture.png" style="width:100%">
+<img src="architecture.png" style="width:90%">
 
 
-## Security Concerns: 
+## Security Concerns 
 
 These AWS services are applied for security concerns:
 <br/>
 1.	**Amplify** is a powerful tool with many built-in security features that can help protect applications and data. It provides data encryption capabilities that can encrypt data during data transmission and storage to protect sensitive information from being Acquired by unauthorized visitors. We use these features to ensure that applications comply with regulations and standards for privacy and data security.
 2.	**API Gateway** can be used to securely expose and manage APIs. Through API Gateway, access control policies can be implemented to ensure secure interactions between front-end and back-end.
-3.	**IAM** is AWS's authentication and access control service, used to manage access to AWS resources. Through IAM, we can control Lambda's access to DynamoDB services and resources.
+3.	**IAM** is AWS's authentication and access control service, used to manage access to AWS resources. Through IAM, we can grant write access for Lambda to store data in DynamoDB.
 
 <br/>
 
-## 🌍 Building Steps :
+## 🌍 Building Steps
 
 **Step 1 — Deploy applications using Amplify**
 
@@ -84,7 +86,7 @@ These AWS services are applied for security concerns:
 <br/>
 
 
-## 📁 File Strutcture : 
+## 📁 File Strutcture
 
 ```
 |   index.html // Index Html File 
@@ -143,14 +145,14 @@ These AWS services are applied for security concerns:
 <br/>
 
 
-## 💻 Screenshot : 
+## 💻 Screenshot
 
 ![Screenshot](screenshot-pc.png)
 
 
 <br/>
 
-### ©️ Copyright : 
+### ©️ Copyright
 
 ```
 Boost Software License - Version 1.0 - August 17th, 2003
