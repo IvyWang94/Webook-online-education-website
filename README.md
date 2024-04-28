@@ -29,7 +29,7 @@ Specially, this application integrates several AWS cloud services including:
 
 ## Architecture
 
-<img src="architecture.png" style="width:90%">
+<img src="architecture2.png" style="width:90%">
 
 
 ## Security Concerns 
