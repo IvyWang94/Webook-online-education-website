@@ -1,7 +1,7 @@
 
 # Webook - Single Page Education Website
 
-(Adapted from [source](https://github.com/SM8UTI/Webook-online-education-website))  
+(Adapted from [source](https://github.com/SM8UTI/Webook-online-education-website), index.html and script.js are modified to be compatible with the AWS services.)  
 Contributor: Y. Wang, Y. Ge, L. Lin, X. He
 <br/>
 
