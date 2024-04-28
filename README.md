@@ -6,13 +6,13 @@ Contributor: Y. Wang, Y. Ge, L. Lin, X. He
 <br/>
 
 ## Overview
-In this project, we aim to build and deploy a single-page web application (named “Webook”) that enables users to explore the marketing information of online courses provided by Webook. This application presents users with an HTML-based interface with a RESTful web service on the backend to submit their enquiries.
+In this project, we aim to build and deploy a single-page web application (named “Webook”) that enables users to explore the marketing information of online courses provided by the Webook company. This application presents users with an HTML-based interface with a RESTful web service on the backend to submit their enquiries.
 
 <br/>
 The main components of the website are: 
 
 - Course introduction, Lecturer introduction, FAQs, Contact messages and other functions, where:
-    - **Contact messages** contains the most important feature of this application
+    - **Contact messages** is the featuring function of this application
 
 We adpated the original webpage, JavaScipt file and python programme to be compatible with the AWS services applied.
 
